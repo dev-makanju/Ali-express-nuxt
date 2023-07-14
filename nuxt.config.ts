@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   modules: [
     "nuxt-icon",
     "nuxt-lodash",
-    "@nuxtjs/supabase",
+    //"@nuxtjs/supabase",
     "@nuxtjs/tailwindcss",
     "@pinia-plugin-persistedstate/nuxt",
     "@pinia/nuxt",
@@ -23,6 +23,11 @@ export default defineNuxtConfig({
           defer: true 
         },
       ]
+    }
+  },
+  build: {
+    assets: {
+      directory: 'assets'
     }
   }
 })
